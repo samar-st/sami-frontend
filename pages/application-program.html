@@ -227,20 +227,21 @@
     <!-- Header End -->
 
     <!-- 4 steps container -->
-    <div class="container" style="height: 150vh;">
+    <div class="container">
       <!-- <form action="" class="fully-program-form"> -->
         <div class="tab-common-block-top">
-          <button class="tablinks-row-number" id="defaultOpen"  onclick="openProgram(event, 'program')">1 <br> <span id="mobile-hidden-text" >Your program</span></button>
-          <button class="tablinks-row-number" onclick="openProgram(event, 'aboutYou')">2 <br> <span id="mobile-hidden-text">About you</span></button>
-          <button class="tablinks-row-number" onclick="openProgram(event, 'addInfo')">3 <br> <span id="mobile-hidden-text">Additional information</span></button>
-          <button class="tablinks-row-number" onclick="openProgram(event, 'termsCon')">4 <br> <span id="mobile-hidden-text">Terms and conditions</span></button>
+          <button class="tablinks-row-number-active" id="r1-button" onclick="displayR1()">1 <br> <span id="mobile-hidden-text" >Your program</span></button>
+          <button class="tablinks-row-number" id="r2-button" onclick="displayR2()">2 <br> <span id="mobile-hidden-text">About you</span></button>
+          <button class="tablinks-row-number" id="r3-button" onclick="displayR3()">3 <br> <span id="mobile-hidden-text">Additional information</span></button>
+          <button class="tablinks-row-number" id="r4-button" onclick="displayR4()">4 <br> <span id="mobile-hidden-text">Terms and conditions</span></button>
         </div>
         <hr>
-          <div class="your-programs-block" id="program" >
+        <!-- 1 section -->
+          <div class="your-programs-block active" id="r1">
             <div class="ng-star-inserted">
               <h2
                 class="title-of-block-ng"
-                style="font-size: 25px; line-height: 1.2">
+                style="font-size: 25px; line-height: 1.2" >
                 Your program
               </h2>
               <p class="text-of-block-ng">
@@ -319,13 +320,11 @@
                     </ul>
                   </div>
                 </div>
-                <!-- button next to go next section -->
-                <button class="tablinks-row-number" onclick="openProgram(event, 'aboutYou')"><span id="mobile-hidden-text">Next</span></button>
               </div>
             </div>
           </div>
           <!-- second block -->
-          <div class="your-programs-block" id="aboutYou" >
+          <div class="your-programs-block" id="r2" >
             <div class="ng-star-inserted">
               <h2
                 class="title-of-block-ng"
@@ -454,10 +453,9 @@
               </div>
             </form>
             <br>
-            <button class="tablinks-row-number" onclick="openProgram(event, 'addInfo')"><span id="mobile-hidden-text">Next</span></button>
           </div>
           <!-- third block -->
-          <div class="your-programs-block" id="addInfo" >
+          <div class="your-programs-block" id="r3" >
             <div class="ng-star-inserted">
               <h2
                 class="title-of-block-ng"
@@ -489,11 +487,10 @@
                 </div>
               </div>   
               <br>
-              <button class="tablinks-row-number" onclick="openProgram(event, 'termsCon')"><span id="mobile-hidden-text">Next</span></button>
             </div>
           </div>
           <!-- 4th block terms and con -->
-          <div class="your-programs-block" id="termsCon" >
+          <div class="your-programs-block" id="r4" >
             <div class="ng-star-inserted">
               <h2
                 class="title-of-block-ng"
@@ -506,6 +503,10 @@
               </p>
             </div>
           </div>
+
+          <!-- buttons next previous -->
+          <button class="previous" id="previous" onclick="displayPrevious()">Previous</button>
+          <button class="next tablinks-row-number-active" id="next" onclick="displayNext()">Next</button>
         </div>
       <!-- </form> -->
     </div>
@@ -598,5 +599,7 @@
     <!-- Swiper js codes -->
     <script src="/js/swiper.js"></script>
     <script src="/js/select-program.js"></script>
+
+
   </body>
 </html>

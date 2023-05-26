@@ -106,4 +106,7 @@ function changecolor() {
   checking.style.background = "#00aaad";
 }
 if (checking == true) {
+  
 }
+
+// 

@@ -50,12 +50,6 @@ textarea:focus {
     outline: none;
 }
 
-a:hover,
-a:focus {
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-}
 
 ul,
 ol {
@@ -2105,7 +2099,7 @@ a {
 .your-programs-block {
     width: 100%;
     max-width: 990px;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2241,6 +2235,9 @@ a {
     /* border: 1px solid #ccc; */
     border-top: none;
 }
+.your-programs-block.active { 
+    display: block;
+}
 
 .quiz-about-history {
     border: 1px solid #ccc;
@@ -2288,3 +2285,28 @@ a {
     border-radius: 10px;
 }
 /*  */
+.next,
+.previous {
+padding: 15px 10px;
+border-radius: 6px;
+background: deepskyblue;
+color: white;
+border:0;
+outline: none;
+cursor: pointer;
+width: 100px;
+visibility: hidden;
+margin-bottom: 15px;
+}
+
+.tablinks-row-number-active {
+opacity: 1 !important;
+visibility: visible;
+background-color: #005D60;
+}
+.tablinks-row-number-active:focus {
+    opacity: 1 !important;
+    visibility: visible;
+    background-color: #005D60;
+    }
+    
