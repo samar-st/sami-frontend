@@ -109,7 +109,10 @@ ol {
 .text-white a {
     color: #fff;
 }
-
+.buttons-area { 
+    text-align: center;
+    margin-bottom: 1rem;
+}
 /* buttons */
 
 .primary-btn {
@@ -2297,6 +2300,25 @@ cursor: pointer;
 width: 100px;
 visibility: hidden;
 margin-bottom: 15px;
+}
+.next1,
+.previous1 {
+padding: 15px 10px;
+border-radius: 6px;
+background: #e1161f;
+color: white;
+border:0;
+outline: none;
+cursor: pointer;
+width: 100px;
+/* visibility: hidden; */
+margin-bottom: 15px;
+}
+.next1:hover { 
+    color: #fff;
+}
+.previous1:hover { 
+    color: #fff;
 }
 
 .tablinks-row-number-active {
